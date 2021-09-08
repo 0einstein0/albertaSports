@@ -1,0 +1,366 @@
+
+
+.arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+/* Timeline
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+ 
+}
+
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 900px;
+  height: 3px;
+  background: rgba(109, 109, 109, 0.637);
+  
+
+}
+
+.month{
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  border-radius: 50px;
+  float: left;
+  background: #d8b20b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cfb315, #9c820b);   /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cfb315, #9c820b); 
+}
+
+
+
+.month img{
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 70px;
+}
+
+ h1, .monthHeading{
+  font-size: 50px;
+  text-align: center;
+ text-decoration: underline;
+ text-decoration-color: #cfb315;
+}
+
+.month:first-child{
+  margin-left: 70px;
+}
+.timeline ol li:first-child {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.timeline ol li:last-child {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 70px;
+}
+
+p{
+   position: relative;
+   left: calc(100% + 8px);
+   font-family: "Bebas Neue", sans-serif;
+   margin: 0;
+   padding: 0;
+   transform: translateY(-47%);
+   color: rgb(190, 157, 10);
+   text-shadow: 4px 4px 6px #1f1f1fc7;
+   font-size: 2rem
+}
+
+.monthSection{
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+}
+.timeline ol li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0px);
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #272727;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #272727, #111111);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #272727, #111111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow:  0 0 2px 2px rgba(143, 117, 3, 0.445);
+}
+
+
+img{
+
+   width: 100%;
+   height: auto;
+   border-radius: 20px;
+   box-shadow:  0 0 3px 3px rgba(27, 27, 27, 0.301);
+   z-index: 2;
+   
+}
+h6{
+   font-size: 0.9rem;
+   text-align: center;
+   
+   padding: 10px;
+   
+   font-weight: 500;
+   white-space: normal;
+}
+.timeline ol li .btn {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  padding: 12px;
+  right:56px;
+ 
+  border-radius: 25px;
+  background: rgb(204, 169, 14);
+  box-shadow:  0 0 10px 5px rgba(5, 5, 5, 0.514); 
+  
+ 
+}
+
+nav{
+  background-color: rgb(17, 17, 17);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: .5;
+}
+
+.timeline .arrows svg {
+  width: 45px;
+  height: 45px;
+ }
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 1300px) {
+ 
+  .timeline{
+    margin-bottom: 5%;
+  }
+ 
+}
+
+.post1
+{
+  background-image: url('/assets/ind1.png');
+
+}
+.post2{
+  background-image: url('/assets/ind2.png');
+
+}
+.post3{
+  background-image: url('/assets/ind3.png');
+
+}
+
+.post4
+{
+  background-image: url('/assets/ind4.png');
+
+}
+.post5
+{
+  background-image: url('/assets/ind5.png');
+
+}
+.post6
+{
+  background-image: url('/assets/ind6.png');
+
+}
+
+.card {
+  border-radius: 20px;
+  margin: 10px auto;
+ border: 0;
+ 
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 250px;
+  margin-left: 10px;
+  overflow: hidden;
+  background-size: cover;
+}
+.card:hover{
+  box-shadow: 0 0 5px 5px #1d1d1dc0;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #2525257e;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+	
+	background-color: #18181893;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(27, 27, 27, 0.623);	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(78, 78, 78, 0.397) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(78, 78, 78, 0.397) 50%,
+											  rgba(78, 78, 78, 0.397) 75%,
+											  transparent 75%,
+											  transparent)
+}
+.info {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(7, 7, 7, 0.767);
+  transform: translateY(100%)
+    translateY(-128px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+  text-align: left;
+}
+
+.info:before {
+
+  display: block;
+  position: absolute;
+  content: ' ';
+  
+  overflow: hidden;
+  
+  background-size: cover;
+  opacity: 0.25;
+
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0) ;
+}
+
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(243, 243, 243, 0.87);
+}
+
+.card h6 {
+  margin: 0;
+  color:rgb(253, 253, 253);
+  text-align: center;
+  font-size: 13px;
+}
+
+#s1blog1,#s1blog2{
+  
+  display: inline-block;
+   position: relative;
+   padding: 12px;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-left: 5%;
+   clear: both;
+  color: white;
+   width: 90%;
+   
+  border-radius: 15px;
+  background: rgba(15, 15, 15, 0.363);
+
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  margin: 2px auto;
+  
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+}
+#container div {
+  display: inline-block;
+  width: 300px;
+ 
+ 
+}
+#container div:not(:first-child)  {
+margin-left: 30px; 
+ 
+}
+
+.timeline ol li div:nth-child(even) {
+  margin-top:25px
+}
+
+
+
+
+
+/*---------------- Discover-------------------------*/

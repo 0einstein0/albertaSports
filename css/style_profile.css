@@ -1,0 +1,367 @@
+.contain{
+    margin: 30px 200px 0px;
+    
+    box-shadow: 0 0 2px 2px #00000050;
+    padding: 50px;
+    background-color: rgba(29, 29, 29, 0.904);
+    border-radius: 25px;
+  }
+  
+p{
+    font-weight: 100;
+    font-size: small;
+    padding-right:50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  h1{
+    color:rgb(224, 192, 8);
+   text-shadow: 2px 2px #382b0173;
+  }
+  
+  .home{
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .div1{
+    margin-bottom: 20px;
+  }
+  .div1 img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 2px #2e2e2e50;
+  }
+  
+  .iframe img{
+    
+    position: relative;
+  }
+  .playbutton{
+  
+    position: absolute;
+    right: 45%;
+    top:30%;
+    transform: translate(0%, 50%);
+   
+  }
+  
+  .tags{
+    background-color:rgb(224, 192, 8);
+    box-shadow: 0 0 2px 2px #00000050;
+    width: fit-content;
+    color: rgb(17, 17, 17);
+    padding: 5px;
+    float: left;
+    margin-left: 5px;
+   
+    border-radius: 25px;
+  }
+  
+  .img div{
+    margin-top: 15px;
+  }
+  
+  main{
+    align-items: center;
+    justify-items: center;
+    height: auto;
+  }
+  
+  #carousel {
+    position: relative;
+    height: 250px;
+  
+    overflow: hidden;
+  }
+  
+  .div2 img{
+    width: 300px; /* width of container */
+    height: 300px; /* height of container */
+    object-fit: cover;
+    box-shadow: 0 0 2px 2px #00000050;
+  
+  
+  }
+  
+  #carousel div {
+    position: absolute;
+     height: 300px;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  #carousel div img {
+    width: 400px;
+   border-radius: 15px;
+    transition: width 1s;
+  }
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideLeft img {
+    width: 200px;
+   
+  }
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideRight img {
+    width: 200px;
+  }
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carousel div.prev img {
+    width: 300px;
+   
+  }
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+  }
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  
+  
+  
+  
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carousel div.next img {
+    width: 300px;
+  }
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carousel div.nextRightSecond img {
+    width: 200px;
+  }
+  
+  .buttons {
+    position: relative;
+   display: flex;
+   justify-content: center;
+    top:20px;
+    bottom: 10px;
+  
+    
+  }
+  
+  button{
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  @media screen and (max-width: 1367px) {
+   .contain{
+    margin: 0px 100px 0px;
+    padding-top: 20px ;
+    padding-bottom: 15px;
+   
+   }
+  .div1{
+    margin-bottom: -30px;
+  }
+  .div1 img{
+    width: 90%;
+  }
+  .div1 h1{
+    font-size: 25px;
+  }
+  .div1 p{
+    font-size: 10px;
+  }
+  
+  .buttons svg{
+    margin-top: -40px;
+    width: 20px;
+  }
+  
+  
+  
+  #carousel  {
+    margin-top: 30px;
+    height: 138px;
+    margin-bottom: -10px;
+  
+  }
+  
+  #carousel div img {
+    width: 200px;
+    height: auto;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+  }
+  
+  #carousel div.hideLeft img {
+    width: 200px;
+   
+  }
+  
+  #carousel div.hideRight img {
+    width: 200px;
+  }
+  #carousel div.prev {
+    
+    transform: translateY(20px) translateX(-50%);
+  }
+  #carousel div.prev img {
+    width: 200px;
+   
+  }
+  #carousel div.prevLeftSecond {
+    
+    transform: translateY(50px) translateX(-50%);
+   
+  }
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+  }
+  #carousel div.selected {
+    transform: translateY(0px) translateX(-50%);
+  }
+  #carousel div.next {
+    
+    transform: translateY(20px) translateX(-50%);
+  }
+  #carousel div.next img {
+    width: 200px;
+  }
+  #carousel div.nextRightSecond {
+    
+    transform: translateY(50px) translateX(-50%);
+    
+  }
+  #carousel div.nextRightSecond img {
+    width: 200px;
+  
+  }
+  
+  .playbutton{
+    top:10%;
+    right: 40%;
+  }
+  
+  }
+  
+   
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  
+   .modal iframe{
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: 50vh;
+  
+  }
+  
+   #img01{
+    margin: auto;
+    display: block;
+    max-width: 70vh;
+  }
+  
+  
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #eeca00;
+    font-size: 60px;
+  
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(119, 92, 3);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #caption {
+   
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #eeca00;
+    padding: 10px 0;
+    height: 0px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    
+    
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+  }
+  
+  
