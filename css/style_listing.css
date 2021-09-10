@@ -21,6 +21,14 @@
    text-shadow: 2px 2px #382b0173;
    font-size: 1.8vw;
   }
+
+  a{
+    color: white;
+  }
+
+  a:hover{
+    color: white;
+  }
   
   .home{
     padding-top: 20px;
